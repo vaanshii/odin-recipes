@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(250, 255, 223);
+}
+
+.header {
+    background-color: rgb(255, 255, 168);
+    border-style: none;
+    border-radius: 20px;
+}
+
+.header h1 {
+    color: rgb(228, 133, 10);
+    font-size: 60px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.image-holder {
+    border-style: solid;
+    border-color: rgb(211, 230, 177);
+    border-width: 8px;
+    border-radius: 8px;
+    width:450px;
+    height:253px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-holder #kare-kare {
+    width: 450px;
+    height: 253px;
+}
+
+.image-holder #sinigang {
+    width: 450px;
+    height: 253px;
+}
+
+.description-tab {
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.description-tab h3{
+    color: rgb(228, 133, 10);
+    font-size: 28px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.description-tab p {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 23%;
+    margin-right: 23%;
+}
+
+.ingredients-tab {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ingredients-tab h3 {
+    color: rgb(228, 133, 10);
+    font-size: 28px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.ingredients-tab ul {
+    text-align: center;
+    margin-left: 24%;
+    margin-right: 24%;
+    text-align: left;
+}
+
+.ingredients-tab #ul-karekare { 
+    margin-left: 30%;
+    margin-right: 24%;
+}
+
+.ingredients-tab #ul-sinigang {
+    margin-left: 30%;
+    margin-right: 24%;
+}
+
+.ingredients-tab li {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 23%;
+    margin-right: 23%;
+}
+
+.steps-tab {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.steps-tab h3 {
+    color: rgb(228, 133, 10);
+    font-size: 28px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.steps-tab li {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 23%;
+    margin-right: 23%;
+}
+
+.steps-tab ol {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}

@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Kare-kare Recipe</title>
 </head>
 <body>
-    <h1>Kare-kare</h1>
-    <img src="../images/kare-kare.jpg" alt="Kare-kare" width="500">
-    
-    <h3>Description</h3>
-    <p>
-        This oxtail kare kare is a richly flavored stew thanks to slow-simmered oxtail. The oxtail can be cooked a day ahead, 
-        so you can skim off the fat to make the dish a little healthier. Using a pressure cooker will reduce the cooking time, 
-        but the stew won't be as flavorful. Serve with rice and bagoóng (shrimp paste).
-    </p>
+    <div class="header">
+        <h1>Kare-kare</h1>
+    </div>
 
+    <div class="image-holder">
+        <img id="kare-kare" src="../images/kare-kare.jpg" alt="Kare-kare" width="500">
+    </div>
+
+    <div class="description-tab">
+        <h3>Description</h3>
+        <p>
+            This oxtail kare kare is a richly flavored stew thanks to slow-simmered oxtail. The oxtail can be cooked a day ahead, 
+            so you can skim off the fat to make the dish a little healthier. Using a pressure cooker will reduce the cooking time, 
+            but the stew won't be as flavorful. Serve with rice and bagoóng (shrimp paste).
+        </p>
+    </div>
+
+   <div class="ingredients-tab">
     <h3>Ingredients</h3>
-    <ul>
+    <ul id="ul-karekare">
         <li>4 1/2 punds beef oxtails</li>
         <li>3 cups water, or more if needed</li>
         <li>2 beef bouillon cubes</li>
@@ -30,7 +39,9 @@
         <li>1 teaspoon achiote powder</li>
         <li>3 tablespoons smooth peanut butter</li>
     </ul>
+   </div>
 
+   <div class="steps-tab">
     <h3>Steps</h3>
     <ol>
         <li>Bring oxtails and water to a boil in a large pot. Reduce the heat to medium-low and simmer until tender, at least 2 hours, 
@@ -47,6 +58,6 @@
             Serve hot.
         </li>
     </ol>
-
+   </div>
 </body>
 </html>
