@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -8,58 +10,140 @@
 
 body {
     background-color: rgb(250, 255, 223);
+    font-family: 'Poppins', sans-serif ;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(41, 41, 40);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 200px;
+    min-width: 200px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: rgb(241, 191, 130);
+    height: 65px;
+}
+
+.navbar .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar .container ul {
+    display: flex;
+    gap: 25px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar .container .nav a:hover {
+    color: rgb(92, 75, 75);
 }
 
 .header {
-    background-color: rgb(255, 255, 168);
-    margin: 6px;
-    padding: 10px 0px 3px 0px;
-    border: 1px none;
-    border-radius: 7px;
+    background-color: rgb(255, 237, 159);
+    height: 400px;
+}
+
+.header .container {
+    height: 100%;
+    width: inherit;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
 }
 
-.header  h1 {
-    color: rgb(228, 133, 10);
-    font-size: 60px;
-    font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
+.header img {
+    max-width: 450px;
+}
+
+.header .container h1 {
+    color: rgb(208, 147, 72);
+}
+
+.header .container p {
+    color: rgb(99, 63, 10);
+    line-height: 1.2;
+}
+
+.section .heading {
+    margin: 10px auto;
     text-align: center;
-}
-
-.recipe-container {
-    background-color:rgb(240, 240, 217);     
-    width: 1800px;
-    height: 320px;
+    font-size: 23px;
+    background-color: rgb(241, 191, 130);
+    width: 220px;
+    padding: 3px;
+    color: #fff;
     border-radius: 20px;
+}
+
+.section .container {
     display: flex;
-    justify-content: space-evenly;  
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding-left: 113px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.recipe-item {
-    text-align: center;
-    margin-top: 18px;
-}
-
-.recipe-container .recipe-link{
-    color: rgb(146, 109, 109);
-    font-size: 28px;
-    text-decoration: none;
-    font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
-}
-
-.recipe-container .recipe-img img {
+.section .container .recipe-card {
     display: flex;
-    width: 300px;
-    height: auto;
-    border-style: solid;
-    border-color: rgb(211, 230, 177);
-    border-width: 8px;
-    border-radius: 8px;
-    margin-top: 18px;
+    flex: 1 0 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(241, 191, 130);
+    padding: 10px 0px;
+    border-radius: 11px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    margin: 0 20px;
+
+    font-size: large;
+    color: #fff;
+}
+
+.section .container .recipe-card .recipe-link {
+    margin-bottom: 10px;
+}
+
+@media(max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .header  {
+        height: 500px;
+      }
+
+    .section .container {
+        display: block;
+        text-align: center;
+    }
 }

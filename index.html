@@ -7,23 +7,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Odin Recipes</h1>
-    </div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Odin Recipes</div>
+            <ul class="nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="header">
+        <div class="container">
+            <div> 
+                <h1>Welcome to Odin Recipes</h1>
+                <p>
+                    This is the first website made by Russel Blanquiza following
+                    the Odin Project Program.
+                    Here are some recipes that I've gathered and these are
+                    one of my favorite recipes.
+                </p>
+            </div>
+            <img src="images/odin-project-logo.png" alt="Odin Project Logo">
+        </div>
+    </header>
 
-    <div class="recipe-container">   
-        <div class="recipe-item sinigang">
-            <a class="recipe-link" href="recipes/sinigang-na-baboy.html">Sinigang na Baboy</a>
-            <a class="recipe-img sinigang" href="recipes/sinigang-na-baboy.html"> <img src="images/sinigang.jpg" alt="Sinigang">
+    <section class="section">
+        <div class="heading">Available Recipes</div>
+        <div class="container">
+            <div class="recipe-card sinigang">
+                <a class="recipe-link" href="recipes/sinigang-na-baboy.html">Sinigang na Baboy</a>
+                <a class="recipe-img sinigang" href="recipes/sinigang-na-baboy.html"> <img src="images/sinigang.jpg" alt="Sinigang">
+            </div>
+            <div class="recipe-card carbonara">
+                <a class="recipe-link" href="recipes/carbonara.html">Carbonara</a>  
+                <a class="recipe-img carbonara" href="recipes/carbonara.html"><img src="images/carbonara.jpg" alt="Carbonara">
+            </div>
+            <div class="recipe-card karekare">
+                <a class="recipe-link" href="recipes/kare-kare.html">Kare Kare</a>
+                <a class="recipe-img kare-kare" href="recipes/kare-kare.html"><img src="images/kare-kare.jpg" alt="Kare-kare"> 
+            </div>
         </div>
-        <div class="recipe-item carbonara">
-            <a class="recipe-link" href="recipes/carbonara.html">Carbonara</a>  
-            <a class="recipe-img carbonara" href="recipes/carbonara.html"><img src="images/carbonara.jpg" alt="Carbonara">
-        </div>
-        <div class="recipe-item karekare">
-            <a class="recipe-link" href="recipes/kare-kare.html">Kare Kare</a>
-            <a class="recipe-img kare-kare" href="recipes/kare-kare.html"><img src="images/kare-kare.jpg" alt="Kare-kare"> 
-        </div>
-    </div>
+    </section>
 </body>
 </html>
