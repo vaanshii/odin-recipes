@@ -25,11 +25,6 @@ a {
     color: inherit;
 }
 
-img {
-    max-width: 200px;
-    min-width: 200px;
-}
-
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -110,25 +105,32 @@ img {
     align-items: center;
 }
 
+.section .container img {
+    float: left;
+    width:  310px;
+    height: 200px;
+    object-fit: cover;
+}
+
 .section .container .recipe-card {
     display: flex;
-    flex: 1 0 0;
-    flex-direction: column;
+    flex: 200px 0 0;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 
     background-color: rgb(241, 191, 130);
-    padding: 10px 0px;
-    border-radius: 11px;
+    padding: 0px 0px;
+    border-radius: 3px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
     margin: 0 20px;
-
+    
     font-size: large;
     color: #fff;
 }
 
 .section .container .recipe-card .recipe-link {
-    margin-bottom: 10px;
+    margin: 10px 0px;
 }
 
 @media(max-width: 768px) {
